@@ -22,6 +22,7 @@ import "../style/index.scss";
         city: null
     }
  */
+
 function render(variables = {}) {
   console.log("These are the current variables: ", variables); //print on the console
   // here we ask the logical questions to make decisions on how to build the html
@@ -33,9 +34,9 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>Lucy Boilett</h1>
+          <h1> ${variable.name}</h1>
           <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
+          <h3>Barcelona, SPAIN</h3>
           <ul class="position-right">
             <li><a href="https://twitter.com/alesanchezr"><i class="fa fa-twitter"></i></a></li>
             <li><a href="https://github.com/alesanchezr"><i class="fa fa-github"></i></a></li>
